@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0b30d44576.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="backBigButton"> 
+        <div id="backCommon">
+            <div id="backInput">
+                <input id="input" type="text">
+            </div>
+            <div id="backButton">
+                <div id="firstButton">
+                    <button class="trippleDotButton lightGrayButton" id="buttonDelete"><i class="fa-solid fa-c"></i></button>
+                    <button class="singleDotButton orangeButton" id="buttonDivision" value="/" onclick="insertCharacter('/')"><i class="fa-solid fa-divide"></i></button>
+                </div>    
+                <div id="secondButton">    
+                    <button class="singleDotButton darkGrayButton" id="buttonSeven" value="7" onclick="insertCharacter(7)"><i class="fa-solid fa-7"></i></button>
+                    <button class="singleDotButton darkGrayButton" id="buttonEight" value="8" onclick="insertCharacter(8)"><i class="fa-solid fa-8"></i></button>
+                    <button class="singleDotButton darkGrayButton" id="buttonNine" value="9" onclick="insertCharacter(9)"><i class="fa-solid fa-9"></i></button>
+                    <button class="singleDotButton orangeButton" id="buttonMultiplication" value="x" onclick="insertCharacter('*')"><i class="fa-solid fa-xmark"></i></button>
+                </div>    
+                <div id="thirdButton">    
+                    <button class="singleDotButton darkGrayButton" id="buttonFour" value="4" onclick="insertCharacter(4)"><i class="fa-solid fa-4"></i></button>
+                    <button class="singleDotButton darkGrayButton" id="buttonFive" value="5" onclick="insertCharacter(5)"><i class="fa-solid fa-5"></i></button>
+                    <button class="singleDotButton darkGrayButton" id="buttonSix" value="6" onclick="insertCharacter(6)"><i class="fa-solid fa-6"></i></button>
+                    <button class="singleDotButton orangeButton" id="buttonMinus" value="-" onclick="insertCharacter('-')"><i class="fa-solid fa-minus"></i></button>
+                </div>    
+                <div id="fourthButton">    
+                    <button class="singleDotButton darkGrayButton" id="buttonOne" value="1" onclick="insertCharacter(1)"><i class="fa-solid fa-1"></i></button>
+                    <button class="singleDotButton darkGrayButton" id="buttonTwo" value="2" onclick="insertCharacter(2)"><i class="fa-solid fa-2"></i></button>
+                    <button class="singleDotButton darkGrayButton" id="buttonThree" value="3" onclick="insertCharacter(3)"><i class="fa-solid fa-3"></i></button>
+                    <button class="singleDotButton orangeButton" id="buttonPlus" value="+" onclick="insertCharacter('+')"><i class="fa-solid fa-plus"></i></button>
+                </div>    
+                <div id="fifthButton">    
+                    <button class="doubleDotButton darkGrayButton" id="buttonZero" value="0" onclick="insertCharacter(0)"><i class="fa-solid fa-0"></i></button>
+                    <button class="singleDotButton darkGrayButton" id="buttonDot" value="." onclick="insertCharacter('.')">.</button>
+                    <button class="singleDotButton orangeButton" id="buttonEqually" value="=" onclick="result()"><i class="fa-solid fa-equals"></i></button>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/calculator.js"></script>    
+</body>
+</html>
+
